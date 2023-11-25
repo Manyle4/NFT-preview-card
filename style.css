@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit", sans-serif;
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: 320px;
+    height: 510px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 27px 5px 12px hsl(215, 55%, 9%);
+}
+.img-div{
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img-div img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+    border-radius: 10px;
+    display: none;
+}
+.eye{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-div:hover .overlay{
+    display: block;
+    cursor: pointer;
+}
+.cost{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.cost h4{
+    display: flex;
+    align-items: center;
+}
+.cost h4 span{
+    margin-left: 5px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    padding: 12px 0 15px 0;
+}
+.user img{
+    width: 30px;
+    height: auto;
+    border:2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+}
+.price{
+    color: hsl(178, 100%, 50%);
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+h4{
+    color: hsl(215, 51%, 70%);
+}
+h2{
+    padding: 15px 0;
+}
+h2:hover, .user-name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+h2, .user-name{
+    color: hsl(0, 0%, 100%);
+}
